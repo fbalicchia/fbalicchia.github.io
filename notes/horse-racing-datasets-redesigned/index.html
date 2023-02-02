@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Horse Racing Datasets redesigned - Prosport</title>
+  <link rel="canonical" href="https://www.test.it//notes/horse-racing-datasets-redesigned/" />
+  <meta property="og:site_name" content="Prosport" />
+  <meta property="og:title" content="Horse Racing Datasets redesigned - Prosport" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.test.it//notes/horse-racing-datasets-redesigned/" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://www.test.it//img/social-image.png" />
+  <meta name="twitter:image" content="https://www.test.it//img/social-image.png" />
+  <meta property="og:image:alt" content="Decorative image for Prosport dot com" />
+  <meta name="twitter:image:alt" content="Decorative image for Prosport dot com" /><meta name="description" content="A redesign and port to Eleventy is finally in the books." />
+  <meta name="twitter:description" content="A redesign and port to Eleventy is finally in the books." />
+  <meta property="og:description" content="A redesign and port to Eleventy is finally in the books." /><meta name="generator" content="Eleventy" />
+  <meta name="monetization" content="$ilp.uphold.com/xmqJRMpPdie4" />
+  <link rel="me" href="https://mastodon.social/@superterrific" />
+  <link rel="icon" href="/img/icons/favicon.png" type="image/png" />
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="/img/icons/icon-192x192.png">
+  <link rel="preload" href="/fonts/Shrikhand-400-latin18.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Bitter-400-latin5.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Bitter-600-latin10.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Bitter-700-latin15.woff2" as="font" type="font/woff2" crossorigin>
+  <style>:root{--color-primary:#00365d;--color-primary-darkest:#080c12;--color-primary-darker:#111a28;--color-primary-dark:#182335;--color-primary-mid:#004a7f;--color-primary-highlight:#7cc7de;--color-primary-banding:#dceaF9;--color-primary-tint:#f6f9fc;--color-secondary:rgb(83, 163, 216);--color-secondary-mid:#1097b9;--color-secondary-highlight:#f2d1f5;--color-secondary-tint:#f9e9fa;--color-darker:#21262a;--color-dark:#374047;--color-dark-highlight:#7f8a93;--color-dark-tint:#efefef;--color-lightest:#fff;--color-darkest:#000;--color-highlight-orange:#d45c28;--color-highlight-green:#31d428;--color-highlight-red:#d42832;--color-highlight-blue:#2877d4;--flow-space:1rem;--shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1),0 2px 4px -1px rgba(0, 0, 0, 0.06);--body-font:"Bitter",sans-serif;--body-meta:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--body-background:var(--color-lightest);--body-color:var(--color-darkest);--heading-big:var(--color-secondary);--heading-small:var(--color-primary);--link-color:var(--color-primary);--link-hover-bg:var(--color-secondary);--link-hover-text:var(--color-white);--link-focus:var(--color-secondary);--code-bg:var(--color-primary-banding);--code-text:inherit;--caption-bg:var(--color-primary-tint);--tag-bg:var(--color-dark-tint);--focus-header:var(--color-primary);--focus-main:var(--color-secondary);--blockquote-bg:var(--color-primary-banding);--table-header-bg:var(--color-primary);--table-header-text:var(--color-lightest);--table-bg:var(--color-lightest);--table-alt:var(--color-dark-tint);--project-card-bg:var(--color-primary-tint);--project-card-focus:var(--color-secondary);--form-border:var(--color-secondary);--form-button-bg:var(--color-primary);--form-button-color:var(--color-lightest);--form-button-focus:var(--color-secondary);--form-focus:var(--link-focus)}@media (prefers-color-scheme:dark){:root{--body-background:var(--color-primary-dark);--body-color:var(--color-dark-tint);--heading-big:var(--color-secondary-mid);--heading-small:var(--color-primary-highlight);--link-color:var(--color-primary-highlight);--code-bg:var(--color-dark);--code-text:inherit;--caption-bg:var(--color-dark);--tag-bg:var(--color-primary-darkest);--focus-header:var(--color-primary-tint);--focus-main:var(--color-secondary-mid);--blockquote-bg:var(--color-dark);--table-header-bg:var(--color-darkest);--table-header-text:var(--color-lightest);--table-bg:var(--color-dark);--table-alt:var(--color-darker);--project-card-bg:var(--color-primary-darker);--project-card-focus:var(--color-secondary-mid);--form-button-bg:var(--color-secondary);--form-button-focus:var(--color-secondary-mid);--form-focus:var(--color-primary-highlight)}img{filter:brightness(.85) saturate(1.15)}}*,::after,::before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin:0}html{overflow-x:hidden;scroll-padding-top:1rem}ol[class],ul[class]{list-style:none;margin:0}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block;height:auto}button,input,select,textarea{font:inherit}img:not([alt]){filter:blur(10px)}body{font-family:var(--body-font,sans-serif);font-size:1rem;display:flex;flex-direction:column;color:var(--body-color);background:var(--body-background);min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}a{color:var(--link-color);text-underline-offset:.2rem}a:hover{background:var(--color-secondary);color:var(--color-lightest);text-decoration:none}header a:focus-visible{outline:2px solid var(--focus-header);overflow:auto}main a:focus-visible{outline:2px solid var(--focus-main);outline-offset:.1rem;overflow:auto}footer a:focus-visible{outline:2px solid var(--color-lightest);outline-offset:.1rem;overflow:auto}.footer-links a{text-decoration:none}p::selection{background:var(--color-secondary-highlight);color:var(--color-darkest)}main:focus{outline:0}header{padding:1rem .5rem}main{flex-grow:1}footer{padding:2rem .5rem 3rem;background-color:var(--color-primary);color:var(--color-dark-tint)}footer a{color:var(--color-primary-highlight)}footer p::selection{background:var(--color-secondary);color:var(--color-primary-tint)}.pad-hero{padding:1rem .5rem 4rem}.pad-content{padding:2rem 1rem 4rem}.splitter{display:flex;flex-wrap:wrap;justify-content:space-between}.promo-summary{margin-bottom:calc(var(--flow-space) * 1.5)}.wrapper{max-width:65rem;margin:0 auto}.wrapper-content{max-width:45rem;margin:0 auto}.grid-container-sm{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:calc(var(--flow-space) * 3) calc(var(--flow-space) * 3)}.grid-container-lg{display:grid;grid-template-columns:repeat(auto-fit,minmax(28rem,1fr));gap:calc(var(--flow-space) * 2) calc(var(--flow-space) * 5)}.site-header{display:flex;flex-wrap:wrap;justify-content:space-between}.site-nav{align-self:center;margin-left:-.5rem}.site-nav ul{display:flex;flex-wrap:wrap;margin:0;padding:0}.site-nav li{list-style:none;padding-inline-end:1rem;font-size:1.25rem;font-size:clamp(1.1rem,3vw,1.25rem)}.site-nav li:last-child{padding-inline-end:0}.site-title{align-self:center;font-size:2.6rem;font-family:Shrikhand,sans-serif;line-height:1.1}header a{padding:.4rem .2rem;text-decoration:none}[aria-current=page],[data-state=active]{background:var(--color-secondary);color:var(--color-lightest);padding:.4rem .5rem;text-decoration:none;font-weight:500}#nav-home [aria-current=page]{background:inherit;color:var(--link-color);font-weight:400;padding:0 .2rem}h1{font-size:2.1rem;font-family:Bitter,sans-serif;line-height:1.15;font-weight:700}.promo-article-title,h2{font-family:Bitter,sans-serif;font-size:1.5rem;line-height:1.35}.promo-article-title{font-weight:600}h3{font-family:Bitter,sans-serif;line-height:1.3;font-weight:600}.meta{font-size:.9rem;font-family:var(--body-meta)}footer h2{font-size:1.2rem;font-weight:400}footer p{line-height:1.8}.tag-list{display:flex;flex-wrap:wrap;align-items:flex-start;font-family:var(--body-meta)}.tag-list>*{padding-inline-end:.75rem}ul.tag-list-summary{margin-top:.5rem;margin-bottom:-.5rem}.tag-list-summary li{margin-bottom:.5rem}.tag-list-summary a{background:var(--tag-bg);text-decoration:none;padding:.15rem .25rem}.tag-list-summary a:hover{background:var(--color-primary)}.button{display:inline-block;cursor:pointer;line-height:1;padding:.75rem 1rem;text-decoration:none}.button-light-outline{color:var(--color-primary-highlight);border:1px solid var(--color-primary-highlight)}.icon{width:1em;height:1em;vertical-align:-.125em}.icon-1-25x{width:1.25em;height:1.25em;vertical-align:-.25em}.icon-2x{width:2em;height:2em;vertical-align:-.5em}.flow-0>*+*{margin-top:.5rem}.flow-100>*+*{margin-top:1rem}.flow-150>*+*{margin-top:1.5rem}.flow-200>*+*{margin-top:2rem}.flow-300>*+*{margin-top:3rem}.flow-500>*+*{margin-top:5rem}.fill{flex:1}.cover{object-fit:cover}.img-fill{width:100%}.full-bleed{width:100vw;margin-left:50%;transform:translateX(-50%)}[href="#main-content"]:not(:focus){clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px}[href="#main-content"]{display:inline-block;position:fixed;left:calc(50% - 10rem);overflow:auto;margin:1rem;padding:1.5rem 3rem;color:var(--color-lightest);background-color:var(--color-secondary);border:4px solid var(--color-darkest);text-align:center;font-size:1.4rem;text-decoration:none;z-index:999}.visually-hidden{position:absolute;width:1px;clip:rect(0 0 0 0);overflow:hidden;white-space:nowrap}@media screen and (max-width:800px){header{padding-bottom:0}.title-wrap{margin-bottom:1rem}.site-nav ul{margin-left:.5rem;margin-top:.5rem}.site-nav li{padding-inline-end:.5rem}nav li{margin-bottom:.75rem}.pad-hero{padding-top:0}.footer-links{margin-bottom:2rem}.wrapper-footer{flex-direction:column}.pad-content{padding-top:.5rem}}blockquote{background-color:var(--blockquote-bg);border-inline-start:.5rem solid var(--color-secondary);padding:1.5rem 2rem;font-family:Bitter,sans-serif;font-size:1.2rem;font-weight:400}cite{font-style:normal}.fig-container{border:1px solid var(--color-dark-highlight);box-shadow:var(--shadow)}.fig-container img{padding:1rem;padding:clamp(1rem,2.5vw,1.5rem);margin-inline:auto}figcaption{font-size:.95rem;padding:0 1.5rem 1rem;padding:0 clamp(1rem,2.5vw,1.5rem) 1rem;line-height:1.6}code{background:var(--code-bg);color:var(--code-text);border-radius:.25rem;padding:.15rem .25rem .125rem;font-size:1.1rem;font-family:var(--body-meta);font-weight:500}[class*=language] code{border:0}.caption{font-size:1rem;background:var(--caption-bg);border:1px solid var(--color-primary);padding:1rem}.reading li{margin-bottom:.75rem;line-height:1.5}.reading :is(ol,ul){margin-top:1rem;font-size:1.1rem;font-size:clamp(1rem,2.5vw,1.1rem)}.reading li p{line-height:1.3}.reading ul li ul{list-style-type:square}.landing-summary{font-family:Bitter,sans-serif;font-size:1rem;font-weight:400;padding-top:.25rem}.tag-cap{text-transform:capitalize}.reading hr{margin:3rem 0;border:0;border-top:1px solid var(--color-dark-highlight)}.no-wrap{white-space:nowrap}.img-center{margin:0 auto}.kofi{display:flex;justify-content:center;margin:3rem auto 1.5rem}.kofi a:hover{background:unset}[dir=rtl] .pagination-arrow{display:none}.post-nav-item{max-width:45%;margin-bottom:.5rem}.post-nav-item a:hover{background-color:var(--color-primary-banding);color:var(--color-darkest)}.post-nav-item:last-of-type{text-align:right}.reading{font-size:1.2rem;font-size:clamp(1.2rem,2.5vw,1.25rem);line-height:1.7}.heading-wrapper{margin-top:calc(var(--flow-space) * 3.5)}.heading-wrapper h2{font-size:1.45rem;color:var(--heading-big);scroll-margin-top:1ex}.heading-wrapper h3{font-size:1.3rem;color:var(--heading-small);font-weight:700}.heading-wrapper h4{font-size:inherit;font-weight:600}.heading-wrapper h3+p,.heading-wrapper h4+ul,.heading-wrapper+p{margin-top:.5rem}.reading h4+p{margin-top:0}.heading-wrapper :is(h1,h2,h3,h4,h5,h6){display:inline}.anchor-link{text-decoration:none;font-weight:500}.anchor-icon{vertical-align:-.2em}a.anchor-link:hover{background:unset}a.anchor-link:hover svg{stroke:var(--color-secondary)}.button-dark{background:var(--color-dark);color:var(--color-dark-tint);border:1px solid var(--color-dark)}.button-dark:hover{border:1px solid var(--color-dark)}.caveat{background-color:var(--color-primary-highlight);color:var(--color-darkest);padding:1.5rem;border-top:1px solid var(--color-primary);border-bottom:1px solid var(--color-primary);margin-bottom:2rem}.caveat-wrapper{display:flex}.caveat-wrapper p{font-size:1.1rem;line-height:1.5}.caveat-icon{margin-right:.5rem}.caveat-text{margin-top:.1rem}.caveat-wrapper h2{font-size:1.4rem;color:var(--color-darkest);margin-top:0}.caveat-wrapper h2+p{margin-top:0}.video-player{overflow:hidden;padding-bottom:56.25%;position:relative;height:0}.video-player iframe{left:0;top:0;height:100%;width:100%;position:absolute}table{width:100%;padding:0;border-collapse:collapse;border:1px solid var(--color-dark);box-shadow:var(--shadow);font-size:.95rem}th{background:var(--table-header-bg);color:var(--table-header-text);text-align:left;vertical-align:bottom;padding:.6rem;box-shadow:var(--shadow);font-weight:500}tbody{background:var(--table-bg)}td{padding:.8rem;border-top:1px solid var(--color-dark-highlight);vertical-align:top}tbody tr:nth-child(even){background:var(--table-alt)}th span{whitespace:pre-line}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:0 0;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#111}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8997a3}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#ff79c6}.token.boolean,.token.number{color:#bd93f9}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#50fa7b}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#eb9939}.token.keyword{color:#8be9fd}.token.important,.token.regex{color:#ffb86c}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}@font-face{font-family:Bitter;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/Bitter-400-cyrillic-ext1.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Bitter;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/Bitter-400-cyrillic2.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Bitter;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/Bitter-400-vietnamese3.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:Bitter;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/Bitter-400-latin-ext4.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Bitter;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/Bitter-400-latin5.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Bitter;font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/Bitter-600-cyrillic-ext6.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Bitter;font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/Bitter-600-cyrillic7.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Bitter;font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/Bitter-600-vietnamese8.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:Bitter;font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/Bitter-600-latin-ext9.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Bitter;font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/Bitter-600-latin10.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Bitter;font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/Bitter-700-cyrillic-ext11.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Bitter;font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/Bitter-700-cyrillic12.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Bitter;font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/Bitter-700-vietnamese13.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:Bitter;font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/Bitter-700-latin-ext14.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Bitter;font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/Bitter-700-latin15.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Shrikhand;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/Shrikhand-400-gujarati16.woff2) format('woff2');unicode-range:U+0964-0965,U+0A80-0AFF,U+200C-200D,U+20B9,U+25CC,U+A830-A839}@font-face{font-family:Shrikhand;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/Shrikhand-400-latin-ext17.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Shrikhand;font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/Shrikhand-400-latin18.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style>
+  <link rel="alternate" type="application/rss+xml" href="https://www.test.it//feed.xml" />
+  <script defer data-domain="danabyerly.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</head>
+<body id="top">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <div class="wrapper site-header">
+      <div class="title-wrap">
+        <div class="site-title">Prosport</div>
+        <span>Masters swimming</span>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul role="list">
+         
+         <li id="nav-home"><a href="/">Home</a></li>
+         
+         <li id="nav-about"><a href="/about/">About</a></li>
+         
+         <li id="nav-records"><a href="/records/">Records</a></li>
+         
+         <li id="nav-articles"><a href="/articles/">Articles</a></li>
+         
+         <li id="nav-notes"><a href="/notes/" data-state="active">Notes</a></li>
+         
+         <li id="nav-races"><a href="/races/">Races</a></li>
+         
+         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    
+    
+
+        <div class="wrapper-content pad-content flow-300">
+          <article class="flow-150 h-entry">
+                  <div class="flow-100">
+        <h1 class="p-name">Horse Racing Datasets redesigned</h1>
+        
+        <p>
+          
+          <time datetime="2021-03-29T00:00:00.000Z" class="dt-published">March 29, 2021</time>
+        </p>
+        
+        
+        <div>
+<span class="visually-hidden">A list of tags for this post.</span>
+<ul class="tag-list tag-list-summary" role="list">
+  
+    <li>
+      <a href="/tag/accessibility/">Accessibility</a>
+    </li>
+  
+    <li>
+      <a href="/tag/airtable/">Airtable</a>
+    </li>
+  
+    <li>
+      <a href="/tag/eleventy/">Eleventy</a>
+    </li>
+  
+    <li>
+      <a href="/tag/side-projects/">Side Projects</a>
+    </li>
+  
+</ul>
+</div>
+        
+      </div>
+
+            <div class="reading flow-200 e-content">
+              <p>Finally! It took a while to <a href="https://twitter.com/superterrific/status/1353047440664915969">circle back to the design</a> after having so much fun <a href="/articles/using-airtable-with-eleventy/">figuring out how to build it</a>, but the fourth version of Horse Racing Datasets is <a href="https://horseracingdatasets.com/">finally done</a>! Or at least out there in a good place with more improvements to come.</p>
+<p>At the end of last year I had a working <a href="/notes/update-on-the-end-of-the-year-to-do-list/">proof of concept</a> of how to use <a href="https://airtable.com/">Airtable</a> with <a href="https://www.11ty.dev/">Eleventy</a> and wrote <a href="/articles/using-airtable-with-eleventy/">an article</a> detailing all the particulars. At the time I couldn’t figure out how to filter on the on the dataset so I did two extra API calls for <a href="https://horseracingdatasets.com/recently-added/">recently added listing</a> and to display a <a href="https://horseracingdatasets.com/">random dataset on the homepage</a>. As I mentioned in my <a href="/notes/ugging-along/">last update</a> I have since figured out how to do it all from a single API call, so updating the article goes on the to do list.</p>
+<p>I also need to update the <a href="">project page</a>, until then here’s a bit about some of the improvements and updates…</p>
+
+      <div class="heading-wrapper">
+        <h2 id="filtering">Filtering
+      </h2>
+        <a class="anchor-link" href="#filtering">
+          <span aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="anchor-icon"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  stroke-width="2.5"
+  stroke="var(--heading-small)"
+  fill="none"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  >
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <line x1="5" y1="9" x2="19" y2="9" />
+    <line x1="5" y1="15" x2="19" y2="15" />
+    <line x1="11" y1="4" x2="7" y2="20" />
+    <line x1="17" y1="4" x2="13" y2="20" />
+</svg></span>
+          <span class="visually-hidden">(permalink)</span>
+        </a>
+      </div><p>Being able to do everything from a single API call is not only a big improvement from my initial proof of concept for this version, but an incredibly big improvement from the prior version, which used an API call for <strong>each category</strong>. This marks a huge step forward in my problem solving abilities, so rather than be mortified by the last version (OK, I’m still a little mortified!), I’m going to be proud of the improvements I’ve made over the last two years.</p>
+<p>A lot of this will go in the update of the <a href="/articles/using-airtable-with-eleventy/">Airtable and Eleventy article</a>, but here are some particulars on the filtering.</p>
+<p>I used the <a href="https://11ty.rocks/eleventyjs/data-arrays/#randomitem-filter">randItem filter from 11ty Rocks</a> to display a “Random Dataset of the Day”. Since Eleventy only pulls from the API on build, I used <a href="https://zapier.com/">Zapier</a> to schedule a <a href="https://zapier.com/apps/netlify/integrations/schedule/29330/start-deploys-of-netlify-sites-on-a-daily-schedule">daily build at Netlify</a>. This displays a new random dataset and picks up any datasets I’ve added to Airtable since the last build, making maintenance a snap.</p>
+<p>The <a href="https://horseracingdatasets.com/all/">All Datasets</a> page displays alphabetically and the sort order is set at Airtable. But on the <a href="/articles/using-airtable-with-eleventy/#listing-by-tag">category pages</a> the default listing is to display by most recently added. With some search engine luck <a href="https://stackoverflow.com/questions/65471629/dot-notation-in-nunjucks-sorting-isnt-working/65481434#65481434">I found this approach</a> and was able to create a filter to sort by title to keep the same approach used on the All Datasets listing.</p>
+<p>The filter gets added in <code>eleventy.js</code>…</p>
+<pre class="language-js"><code class="language-js">config<span class="token punctuation">.</span><span class="token function">addFilter</span><span class="token punctuation">(</span><span class="token string">"sortByTitle"</span><span class="token punctuation">,</span> <span class="token parameter">arr</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  arr<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token punctuation">(</span>b<span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token number">1</span> <span class="token operator">:</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">return</span> arr<span class="token punctuation">;</span><br> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>And then used in the for loop in the template…</p>
+<pre class="language-js"><code class="language-js"><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> datakey <span class="token keyword">in</span> all <span class="token operator">|</span> sortByTitle <span class="token operator">%</span><span class="token punctuation">}</span><br>  <span class="token operator">...</span><br><span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span></code></pre>
+<p>The set-up is similar for the <a href="https://horseracingdatasets.com/recently-added/">Recently Added</a> page. The filter gets added in <code>eleventy.js</code>…</p>
+<pre class="language-js"><code class="language-js">config<span class="token punctuation">.</span><span class="token function">addFilter</span><span class="token punctuation">(</span><span class="token string">"sortByNewest"</span><span class="token punctuation">,</span> <span class="token parameter">arr</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>  arr<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">b<span class="token punctuation">,</span> a</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>date<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token punctuation">(</span>b<span class="token punctuation">.</span>date<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token number">1</span> <span class="token operator">:</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">return</span> arr<span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>And then used in the template…</p>
+<pre class="language-js"><code class="language-js"><span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> datakey <span class="token keyword">in</span> all <span class="token operator">|</span> sortByNewest <span class="token operator">|</span> <span class="token function">limit</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token punctuation">}</span><br>  <span class="token operator">...</span><br><span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span></code></pre>
+<p>I’m also using the <a href="https://11ty.rocks/eleventyjs/data-arrays/#limit-filter">limit filter from 11ty Rocks</a> to set the amount of most recent datasets to return.</p>
+
+      <div class="heading-wrapper">
+        <h2 id="accessibility-improvements">Accessibility improvements
+      </h2>
+        <a class="anchor-link" href="#accessibility-improvements">
+          <span aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="anchor-icon"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  stroke-width="2.5"
+  stroke="var(--heading-small)"
+  fill="none"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  >
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <line x1="5" y1="9" x2="19" y2="9" />
+    <line x1="5" y1="15" x2="19" y2="15" />
+    <line x1="11" y1="4" x2="7" y2="20" />
+    <line x1="17" y1="4" x2="13" y2="20" />
+</svg></span>
+          <span class="visually-hidden">(permalink)</span>
+        </a>
+      </div><p>In the previous version the header was sticky and navigation sidebar was fixed with scrolling on larger screens. Generally I like this sort of layout for documentation or for browsing listings, but there are issues with <a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html">screen reflow</a> when zooming out the screen size. The previous version became less usable around 240% zoom.</p>
+<figure class="fig-container">
+  <picture>
+    <source srcset="/img/hrds-v3-300zoom.avif" type="image/avif">
+    <source srcset="/img/hrds-v3-300zoom.webp" type="image/webp">
+    <img src="/img/hrds-v3-300zoom.png" alt="Prior version of Horse Racing Datasets zoomed to 300%" loading="lazy" />
+  </picture>
+  <figcaption>
+    The previous version zoomed to 300% the layout starts to make the content hard to read.
+  </figcaption>
+</figure>
+<p>In the current version everything flows nicely and it’s easy to read all the way up to 500%.</p>
+<figure class="fig-container">
+  <picture>
+    <source srcset="/img/hrds-v4-300zoom.avif" type="image/avif">
+    <source srcset="/img/hrds-v4-300zoom.webp" type="image/webp">
+    <img src="/img/hrds-v4-300zoom.png" alt="The current version of Horse Racing Datasets zoomed to 300%" loading="lazy" />
+  </picture>
+  <figcaption>
+    The current version zoomed to 300% and everything is easy to read.
+  </figcaption>
+</figure>
+<p>Other improvements include visible focus states and color contrast that meets <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">WCAG AA standards</a> in both the light and dark mode.</p>
+<figure class="fig-container">
+  <picture>
+    <source srcset="/img/light-dark.avif" type="image/avif">
+    <source srcset="/img/light-dark.webp" type="image/webp">
+    <img src="/img/light-dark.png" alt="Horse Racing Datasets homepage in light and dark modes" loading="lazy" />
+  </picture>
+  <figcaption>
+    Light and dark mode.
+  </figcaption>
+</figure>
+<p>The current set up uses the visitor’s system-level settings, but I want to add to add the ability toggle sooner rather than later. I tried to implement the <a href="https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode">Piccalilli user controlled dark or light mode</a> with no luck. I already had the current implementation working by time I tried it, and I’m also using a LOT of custom properties for the themes, but I think my lack of JavaScript skill was the real culprit. Rather than hold up the latest version I decided I’ll put this one on the to do list and come back to it.</p>
+
+      <div class="heading-wrapper">
+        <h2 id="progressive-enhancements">Progressive enhancements
+      </h2>
+        <a class="anchor-link" href="#progressive-enhancements">
+          <span aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="anchor-icon"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  stroke-width="2.5"
+  stroke="var(--heading-small)"
+  fill="none"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  >
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <line x1="5" y1="9" x2="19" y2="9" />
+    <line x1="5" y1="15" x2="19" y2="15" />
+    <line x1="11" y1="4" x2="7" y2="20" />
+    <line x1="17" y1="4" x2="13" y2="20" />
+</svg></span>
+          <span class="visually-hidden">(permalink)</span>
+        </a>
+      </div><p>The menu toggle is simple yet progressively enhanced to work when JavaScript is disabled or fails to load. It uses the “no-js” fallback approach, which can <a href="https://twitter.com/piccalilli_/status/1349730273135476741">easily cause accessibility issues</a>. I tested in VoiceOver as well as keyboard-only with JavaScript enabled and disabled and it worked well. My testing was very limited, but hopefully it will work well for everyone.</p>
+<p>For a more robust and bulletproof approach Andy Bell has a <a href="https://piccalil.li/premium/build-a-fully-responsive-progressively-enhanced-burger-menu/">great premium tutorial at Piccalilli</a>. The membership <a href="https://twitter.com/piccalilli_/status/1372948942019760132">price recently dropped</a> making it easier to avail yourself of top-notch educational content! I want to improve my JavaScript skills to really understand more about resizeObserver and other more advanced topics before I try my hand at that one. But for now I feel like the site offers a good experience.</p>
+<p>Filed under “know thy audience”, when doing any horse racing related project I make sure to do a quick pass in IE11 on my work machine (don’t ask!). The core horse racing audience generally skews older and is less likely to keep their devices up to date. Since I use custom properties the site pretty much renders as black and white in IE11. I have shadows on the dataset container and tags, and originally had them directly in their respective class selectors. They looked a bit odd in the “no color” version so I moved them to custom properties to keep them from rendering in IE11. This site basically looks like a <a href="https://duckduckgo.com/?t=ffsb&amp;q=generic+food+label&amp;atb=v225-1&amp;iax=images&amp;ia=images">generic food label</a> in IE, and I have to admit that I kind of like it.</p>
+<figure class="fig-container">
+  <picture>
+    <source srcset="/img/hrds-ie11.avif" type="image/avif">
+    <source srcset="/img/hrds-ie11.webp" type="image/webp">
+    <img src="/img/hrds-ie11.png" alt="Horse Racing Datasets homepage in IE11" loading="lazy" />
+  </picture>
+  <figcaption>
+    The homepage in IE11, reminiscent of <a href="https://duckduckgo.com/?t=ffsb&q=generic+food+label&atb=v225-1&iax=images&ia=images">generic food labels</a>.
+  </figcaption>
+</figure>
+<p>I also took a quick look with Edge on my work machine and was surprised to discover that it was an older version (44). I discovered this because the spacing was off in several areas and I realized that <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()#browser_compatibility">clamp() was not supported</a> in that version. I should’ve thought of this level of progressive enhancement before, but it lead me to figure out that defaults can be set in combination with <code>clamp()</code>, which allows unsupported browsers to pick-up the non-clamp property.</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">.dataset-container</span> <span class="token punctuation">{</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--dataset-bg<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span><br>  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token function">clamp</span><span class="token punctuation">(</span>1rem<span class="token punctuation">,</span> 2vw<span class="token punctuation">,</span> 1.25rem<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> 1px solid <span class="token function">var</span><span class="token punctuation">(</span>--dataset-border<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">box-shadow</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--shadow-lg<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>In the above example browsers that don’t support <code>clamp()</code> use padding: 1rem while the others use <code>clamp()</code>.</p>
+
+      <div class="heading-wrapper">
+        <h2 id="performance-improvements">Performance improvements
+      </h2>
+        <a class="anchor-link" href="#performance-improvements">
+          <span aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="anchor-icon"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  stroke-width="2.5"
+  stroke="var(--heading-small)"
+  fill="none"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  >
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <line x1="5" y1="9" x2="19" y2="9" />
+    <line x1="5" y1="15" x2="19" y2="15" />
+    <line x1="11" y1="4" x2="7" y2="20" />
+    <line x1="17" y1="4" x2="13" y2="20" />
+</svg></span>
+          <span class="visually-hidden">(permalink)</span>
+        </a>
+      </div><p>Performance improvements are no surprise when going from a site that did an API call on every page to a static site. But it did surprise me that the previous version’s performance scores weren’t worse, not that they’re good, but I imagined much worse.</p>
+<figure class="fig-container">
+  <picture>
+    <source srcset="/img/hrds-lighthouse.avif" type="image/avif">
+    <source srcset="/img/hrds-lighthouse.webp" type="image/webp">
+    <img src="/img/hrds-lighthouse.png" alt="Before and after Lighthouse scores. Before: Performance 89, Accessibility 100, Best Practices 93, SEO 88. After 100 for each category." loading="lazy" />
+  </picture>
+  <figcaption>
+    From just OK to perfect scores. Friendly reminder, <a href="https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/">perfect Lighthouse scores don't mean perfect sites!</a>
+  </figcaption>
+</figure>
+<p>The performance metrics show the details of the improvements…</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Performance Metric</th>
+<th style="text-align:left">Previous Version</th>
+<th style="text-align:left">Current Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">First Contentful Paint</td>
+<td style="text-align:left">1.5s</td>
+<td style="text-align:left">0.8s</td>
+</tr>
+<tr>
+<td style="text-align:left">Speed Index</td>
+<td style="text-align:left">1.7s</td>
+<td style="text-align:left">0.8s</td>
+</tr>
+<tr>
+<td style="text-align:left">Largest Contentful Paint</td>
+<td style="text-align:left">3.2s</td>
+<td style="text-align:left">1.7s</td>
+</tr>
+<tr>
+<td style="text-align:left">Time to Interactive</td>
+<td style="text-align:left">3.5s</td>
+<td style="text-align:left">0.8s</td>
+</tr>
+<tr>
+<td style="text-align:left">Total Blocking Time</td>
+<td style="text-align:left">160ms</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">Cumulative Layout Shift</td>
+<td style="text-align:left">0.113</td>
+<td style="text-align:left">0.01</td>
+</tr>
+</tbody>
+</table>
+<p>Another area of performance improvement was moving from Tailwind CSS to handwritten CSS. Tailwind isn’t necessarily a performance issue, but I used it as is with no optimization, mostly because I didn’t (and arguably still don’t!) know how to use build tools.</p>
+<p>Here’s a comparison using <a href="https://cssstats.com/">CSS Stats</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">CSS Stat</th>
+<th style="text-align:left">Previous Version</th>
+<th style="text-align:left">Current Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">File size</td>
+<td style="text-align:left">566kb</td>
+<td style="text-align:left">8kb</td>
+</tr>
+<tr>
+<td style="text-align:left">Gzipped file size</td>
+<td style="text-align:left">77kb</td>
+<td style="text-align:left">2kb</td>
+</tr>
+<tr>
+<td style="text-align:left">Rules</td>
+<td style="text-align:left">9,901</td>
+<td style="text-align:left">78</td>
+</tr>
+<tr>
+<td style="text-align:left">Selectors</td>
+<td style="text-align:left">9,969</td>
+<td style="text-align:left">101</td>
+</tr>
+<tr>
+<td style="text-align:left">Declarations</td>
+<td style="text-align:left">10,988</td>
+<td style="text-align:left">244</td>
+</tr>
+<tr>
+<td style="text-align:left">Properties</td>
+<td style="text-align:left">117</td>
+<td style="text-align:left">100</td>
+</tr>
+<tr>
+<td style="text-align:left">ID</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0</td>
+</tr>
+<tr>
+<td style="text-align:left">Class</td>
+<td style="text-align:left">9,834</td>
+<td style="text-align:left">59</td>
+</tr>
+<tr>
+<td style="text-align:left">Pseudo class</td>
+<td style="text-align:left">3,837</td>
+<td style="text-align:left">19</td>
+</tr>
+<tr>
+<td style="text-align:left">Pseudo element</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">5</td>
+</tr>
+</tbody>
+</table>
+<p>No surprises that there were drastic reductions, you can also view the <a href="https://cssstats.com/stats?url=https%3A%2F%2Fhorseracingdatasets.com%2Fall%2F">full stats for the All Datasets listing page</a> at CSS Stats.</p>
+
+      <div class="heading-wrapper">
+        <h2 id="housekeeping">Housekeeping
+      </h2>
+        <a class="anchor-link" href="#housekeeping">
+          <span aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="anchor-icon"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  stroke-width="2.5"
+  stroke="var(--heading-small)"
+  fill="none"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  >
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <line x1="5" y1="9" x2="19" y2="9" />
+    <line x1="5" y1="15" x2="19" y2="15" />
+    <line x1="11" y1="4" x2="7" y2="20" />
+    <line x1="17" y1="4" x2="13" y2="20" />
+</svg></span>
+          <span class="visually-hidden">(permalink)</span>
+        </a>
+      </div><p>As mentioned in the <a href="#filtering">Filtering section</a>, I set up daily build at <a href="https://zapier.com/apps/netlify/integrations/schedule/29330/start-deploys-of-netlify-sites-on-a-daily-schedule">Netlify using Zapier</a>. API calls are only made at build time, so this ensures that there will be a new Random Dataset of Day <a href="https://horseracingdatasets.com">on the homepage</a> and that any datasets I’ve added to Airtable will picked up daily.</p>
+<p>I changed a couple of urls from the previous version so I set up redirects for those changes. Netlify offers a couple of different approaches to <a href="https://docs.netlify.com/routing/redirects/">handle redirects</a>. I went with the redirects file. To make sure it ends up in the directory that’s deployed I added this to my <code>eleventy.js</code> file…</p>
+<pre class="language-js"><code class="language-js">config<span class="token punctuation">.</span><span class="token function">addPassthroughCopy</span><span class="token punctuation">(</span><span class="token string">'./src/_redirects'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Finally, I wasn’t originally going to have individual pages for each dataset, but I realized this would make it easier to share and reference them. I used this <a href="https://www.11ty.dev/docs/pages-from-data/">handy approach</a> from the Eleventy Docs.</p>
+
+      <div class="heading-wrapper">
+        <h2 id="whats-next">What’s next
+      </h2>
+        <a class="anchor-link" href="#whats-next">
+          <span aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  class="anchor-icon"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  stroke-width="2.5"
+  stroke="var(--heading-small)"
+  fill="none"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  >
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <line x1="5" y1="9" x2="19" y2="9" />
+    <line x1="5" y1="15" x2="19" y2="15" />
+    <line x1="11" y1="4" x2="7" y2="20" />
+    <line x1="17" y1="4" x2="13" y2="20" />
+</svg></span>
+          <span class="visually-hidden">(permalink)</span>
+        </a>
+      </div><p>Knocking this one off the list was a big accomplishment, but there’s always something else to do. Here’s what I’ll be focusing on next.</p>
+<ul>
+<li>Update the <a href="https://danabyerly.com/projects/horse-racing-datasets/">project page</a>.</li>
+<li>The 2021 version of <a href="https://danabyerly.com/projects/kentucky-derby-magic-8-ball/">Derby Magic 8 Ball</a>, and maybe a revival of the <a href="http://www.exactamundo.org/2018/04/16/2018-kentucky-derby-random-top-10-generator/">Random Derby Top 10 List</a>.</li>
+<li>Update <a href="/articles/using-airtable-with-eleventy/">Using Airtable with Eleventy</a> to include improved approaches.</li>
+<li>Work on the visitor-controlled light and dark toggle.</li>
+<li>Research adding search to the site.</li>
+<li>A secret project with <a href="http://twitter.com/railbird">Jessica Chapel</a>!</li>
+</ul>
+
+            </div>
+            <div hidden>
+              <a href="https://www.test.it//notes/horse-racing-datasets-redesigned/" class="u-url">Horse Racing Datasets redesigned</a>
+              <p class="h-card p-author">
+                <a href="https://www.test.it/" class="p-name u-url" rel="author">Prosport</a>
+                <img src="https://www.test.it//img/d-f-bw-250.jpg" class="u-photo" alt="Dana Byerly">
+              </p>
+            </div>
+          </article>
+
+          
+          <section>
+            
+<span class="visually-hidden">A list of tags for this post.</span>
+<ul class="tag-list tag-list-summary" role="list">
+  
+    <li>
+      <a href="/tag/accessibility/">Accessibility</a>
+    </li>
+  
+    <li>
+      <a href="/tag/airtable/">Airtable</a>
+    </li>
+  
+    <li>
+      <a href="/tag/eleventy/">Eleventy</a>
+    </li>
+  
+    <li>
+      <a href="/tag/side-projects/">Side Projects</a>
+    </li>
+  
+</ul>
+
+          </section>
+          
+
+          
+          <nav class="splitter"  aria-label="Pagination links">
+            <div class="post-nav-item">
+              
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x pagination-arrow" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="5" y1="12" x2="9" y2="16" />
+                <line x1="5" y1="12" x2="9" y2="8" />
+              </svg>
+              Newer
+              <p>
+                <a href="/notes/quick-fix-and-a-test/">Quick fix and a test</a>
+              </p>
+              
+            </div>
+            <div class="post-nav-item">
+              
+              <p class="older">
+                Older
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x pagination-arrow" width="20" height="20"  viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-secondary)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                  <path stroke="none" d="M0 0h24v24H0z"/>
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <line x1="15" y1="16" x2="19" y2="12" />
+                  <line x1="15" y1="8" x2="19" y2="12" />
+              </p>
+              <p>
+                <a href="/notes/ugging-along/">Ugging along</a>
+              </p>
+            </div>
+            
+          </nav>
+          
+
+
+          
+                  <p class="kofi">
+          <a href="https://ko-fi.com/J3J06MMCZ" rel="noopener noreferrer"><img src="/img/kofi-button-dark.png" width="136" height="31" alt="Enjoying this site? Leave me a tip at Ko-fi!"></a>
+        </p>
+
+          
+          
+          <p><a href="#top">Back to top</a></p>
+          
+
+        </div>
+
+    
+  </main>
+  <footer class="h-card">
+    <div class="wrapper">
+          <div class="flow-300">
+      <div class="flow-0">
+        <h2>&copy; <a href="" class="u-url" rel="me"><span class="p-name u-author">Prosport</span></a>, all rights reserved.</h2>
+        <p>
+          Built with <a href="https://www.11ty.dev/">Eleventy</a> and hosted at <a href="https://netlify.com">Netlify</a>, code is located at <a href="https://github.com/fbalicchia">GitHub</a>.
+        </p>
+        <p>
+          This site uses <a href="https://plausible.io/">Plausible Analytics</a>, which does not use cookies and does not track you!
+        </p>
+      </div>
+      <div class="wrapper-footer splitter ">
+        <div class="footer-links">
+          <ul class="flow-0">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <circle cx="5" cy="19" r="1" />
+                <path d="M4 4a16 16 0 0 1 16 16" />
+                <path d="M4 11a9 9 0 0 1 9 9" />
+              </svg>
+              <a href="/feed.xml">RSS</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <polyline points="3 7 12 13 21 7" />
+              </svg>
+              <a href="/contact/" rel="me">Contact</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <path d="M15 21h-9a3 3 0 0 1 -3 -3v-1h10v2a2 2 0 0 0 4 0v-14a2 2 0 1 1 2 2h-2m2 -4h-11a3 3 0 0 0 -3 3v11" />
+                <line x1="9" y1="7" x2="13" y2="7" />
+                <line x1="9" y1="11" x2="13" y2="11" />
+              </svg>
+              <a href="/changelog/">Changelog</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
+              </svg>
+              <a href="/style-guide/">Style Guide</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul class="flow-0">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <circle cx="12" cy="12" r="9" />
+                <path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" />
+                <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+              </svg>
+              <a href="/accessibility-statement/">Accessibility Statement</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <line x1="5" y1="9" x2="19" y2="9" />
+                <line x1="5" y1="15" x2="19" y2="15" />
+                <line x1="11" y1="4" x2="7" y2="20" />
+                <line x1="17" y1="4" x2="13" y2="20" />
+              </svg>
+              <a href="/tags-all/">All Tags</a>
+            </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                  <path stroke="none" d="M0 0h24v24H0z"/>
+                  <polyline points="12 8 12 12 14 14" />
+                  <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+                </svg>
+                <a href="/archive/">Archived Versions</a>
+              </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <polyline points="6 21 21 6 18 3 3 18 6 21" />
+                <line x1="15" y1="6" x2="18" y2="9" />
+                <path d="M9 3a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+                <path d="M19 13a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+              </svg>
+              <a href="/colophon">Colophon</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <ul class="flow-0">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round"
+              stroke-linejoin="round" role="presentation" focusable="false">
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <path
+                d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21a4.192 4.192 0 0 0 -.08 -3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 0 0 4 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
+            </svg>
+            <a href="https://github.com/fbalicchia/" rel="me">Github</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round"
+              stroke-linejoin="round" role="presentation" focusable="false">
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <path
+                d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497 -3.753C20.18 7.773 21.692 5.25 22 4.009z" />
+            </svg>
+            <a href="https://twitter.com/fbalicchia" rel="me">Twitter</a>
+          </li>
+            
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-1-25x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="var(--color-primary-highlight)" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                role="presentation" focusable="false">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z">
+                </path>
+                <path
+                  d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722">
+                </path>
+              </svg>
+              <a href="https://hackyderm.io/@fbalicchia" rel="me">Mastodon</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </footer>
+  
+</body>
+</html>
